@@ -12,16 +12,18 @@
     <!-- HEADER -->
     <header class="header">
         <div class="logo-section">
-            <button class="icon-btn" id="menuToggle">
+            <button class="icon-btn" id="menuToggle" ; style="color: #FFFFFF;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="3" y1="12" x2="21" y2="12"></line>
                     <line x1="3" y1="6" x2="21" y2="6"></line>
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </button>
-            <div class="logo">
-                <img src="img/Logoatend.png" alt="Logo IA Sistem">
-            </div>
+            <a href="login.html">
+                <div class="logo">
+                    <img src="img/Logoatend.png" alt="Logo IA Sistem">
+                </div>
+            </a>
             <div class="brand">
                 <h2 style="color: #FFFFFF">IA SISTEM</h2>
                 <p style="color: #b9ba6b;">Sistema de Gerenciamento</p>
@@ -29,7 +31,7 @@
         </div>
 
         <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Buscar por cliente, OS, produto...">
+            <input type="text" id="searchInput" placeholder="Pesquisar cliente, produto, ordem de serviço">
             <button class="search-btn">🔍</button>
         </div>
 
@@ -63,7 +65,7 @@
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
               <div class="sidebar-section">
-                <div class="sidebar-title">Módulos</div>
+                <div class="sidebar-title" ; style="color: #b9ba6b;">Módulos</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html" class="active">Dashboard</a></li>
                     <li><a href="atendimento.html">Atendimento</a></li>
@@ -76,7 +78,7 @@
             </div>
 
             <div class="sidebar-section">
-                <div class="sidebar-title">Ajuda</div>
+                <div class="sidebar-title" ; style="color: #b9ba6b;">Ajuda</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html">Suporte</a></li>
                     <li><a href="atendimento.html">Tutorial</a></li>
@@ -88,7 +90,7 @@
         <main class="content">
             <div class="page-header">
                 <h1 style="color: #FFFFFF;">Dashboard - Atendimento</h1> <!--SUBTÍTULO TELA PRINCIPAL-->
-                <div class="breadcrumb"; style="color:#fef3c7" >Dashboard / Atendimento</div>
+                <div class="breadcrumb"; style="color:#c7eefe" >Dashboard / Atendimento</div>
             </div>
 
             <!-- CARDS DE ESTATÍSTICAS -->
@@ -185,13 +187,13 @@
                     <table class="os-table" id="osTable">
                     <thead>
                         <tr>
-                            <th>OS</th>
-                            <th>Cliente</th>
-                            <th>Aparelho</th>
-                            <th>Problema</th>
-                            <th>Status</th>
-                            <th>Data</th>
-                            <th>Ações</th>
+                            <th style="color: #FFFFFF;">OS</th>
+                            <th style="color: #FFFFFF;">Cliente</th>
+                            <th style="color: #FFFFFF;">Aparelho</th>
+                            <th style="color: #FFFFFF;">Problema</th>
+                            <th style="color: #FFFFFF;">Status</th>
+                            <th style="color: #FFFFFF;">Data</th>
+                            <th style="color: #FFFFFF;" >Ações</th>
                         </tr>
                     </thead>
                         <tbody id="osTableBody">
@@ -475,8 +477,8 @@
                     <tr>
                         <td colspan="7" style="text-align: center; padding: 40px; color: var(--gray-medium);">
                             <div style="font-size: 48px; margin-bottom: 20px;">📋</div>
-                            <div>Nenhuma ordem de serviço encontrada</div>
-                            <div style="font-size: 14px; margin-top: 10px;">Crie sua primeira O.S!</div>
+                            <div>Você ainda não tem uma ordem de serviço <br> Crie uma para começar.</div>
+                            
                         </td>
                     </tr>
                 `;
