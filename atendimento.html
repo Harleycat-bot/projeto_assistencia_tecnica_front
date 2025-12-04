@@ -19,11 +19,9 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </button>
-            <a href="login.html">
-                <div class="logo">
-                    <img src="img/Logoatend.png" alt="Logo IA Sistem">
-                </div>
-            </a>
+            <div class="logo">
+                <img src="img/Logoatend.png" alt="Logo IA Sistem">
+            </div>
             <div class="brand">
                 <h2 style="color: #FFFFFF">IA SISTEM</h2>
                 <p style="color: #b9ba6b;">Sistema de Gerenciamento</p>
@@ -31,26 +29,26 @@
         </div>
 
         <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Pesquisar cliente, produto, ordem de serviço">
+            <input type="text" id="searchInput" placeholder="Buscar por cliente, produto, ordem de serviço...">
             <button class="search-btn">🔍</button>
         </div>
 
         <div class="header-actions">
-            <button class="icon-btn" style="color: #FFFFFF;">
+            <button class="icon-btn" ; style="color: #FFFFFF;"><!--ICONE NOTIFICAÇÃO--> 
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
                     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
                 </svg>
                 <span class="notification-badge" id="notificationCount">0</span>
             </button>
-            <button class="icon-btn" style="color: #FFFFFF;">
+            <button class="icon-btn" ; style="color: #FFFFFF;"><!--ICONE CONTA-->
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"></circle>
                     <circle cx="12" cy="10" r="3"></circle>
                     <path d="M6.168 18.849A4 4 0 0 1 10 16h4a4 4 0 0 1 3.834 2.855"></path>
                 </svg>
             </button>
-            <button class="icon-btn" data-logout title="Sair do Sistema" style="color: #FFFFFF;">
+            <button class="icon-btn" data-logout title="Sair do Sistema" ; style="color: #FFFFFF;"><!--ICONE SAIR DO SISTEMA-->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                     <polyline points="16 17 21 12 16 7"></polyline>
@@ -65,7 +63,7 @@
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
               <div class="sidebar-section">
-                <div class="sidebar-title" ; style="color: #b9ba6b;">Módulos</div>
+                <div class="sidebar-title" style="color: #b9ba6b;">Módulos</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html" class="active">Dashboard</a></li>
                     <li><a href="atendimento.html">Atendimento</a></li>
@@ -78,7 +76,7 @@
             </div>
 
             <div class="sidebar-section">
-                <div class="sidebar-title" ; style="color: #b9ba6b;">Ajuda</div>
+                <div class="sidebar-title" style="color: #b9ba6b;">Ajuda</div>
                 <ul class="sidebar-menu">
                     <li><a href="atendimento.html">Suporte</a></li>
                     <li><a href="atendimento.html">Tutorial</a></li>
@@ -90,7 +88,7 @@
         <main class="content">
             <div class="page-header">
                 <h1 style="color: #FFFFFF;">Dashboard - Atendimento</h1> <!--SUBTÍTULO TELA PRINCIPAL-->
-                <div class="breadcrumb"; style="color:#c7eefe" >Dashboard / Atendimento</div>
+                <div class="breadcrumb"; style="color:#fef3c7" >Dashboard / Atendimento</div>
             </div>
 
             <!-- CARDS DE ESTATÍSTICAS -->
@@ -176,7 +174,7 @@
                 <div class="section-header">
                     <h2>Ordens de Serviço Recentes</h2>
                     <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="todas">Todas</button>
+                        <button class="filter-btn active" data-filter="todas"">Todas</button>
                         <button class="filter-btn" data-filter="aguardando">Aguardando</button>
                         <button class="filter-btn" data-filter="em_reparo">Em Reparo</button>
                         <button class="filter-btn" data-filter="pronto">Prontas</button>
@@ -187,13 +185,13 @@
                     <table class="os-table" id="osTable">
                     <thead>
                         <tr>
-                            <th style="color: #FFFFFF;">OS</th>
-                            <th style="color: #FFFFFF;">Cliente</th>
-                            <th style="color: #FFFFFF;">Aparelho</th>
-                            <th style="color: #FFFFFF;">Problema</th>
-                            <th style="color: #FFFFFF;">Status</th>
-                            <th style="color: #FFFFFF;">Data</th>
-                            <th style="color: #FFFFFF;" >Ações</th>
+                            <th ; style="color: #FFFFFF;">OS</th>
+                            <th ; style="color: #FFFFFF;">Cliente</th>
+                            <th ; style="color: #FFFFFF;">Aparelho</th>
+                            <th ; style="color: #FFFFFF;">Problema</th>
+                            <th ; style="color: #FFFFFF;">Status</th>
+                            <th ; style="color: #FFFFFF;">Data</th>
+                            <th ; style="color: #FFFFFF;">Ações</th>
                         </tr>
                     </thead>
                         <tbody id="osTableBody">
@@ -209,13 +207,13 @@
     <div class="modal" id="modalNovaOS">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Nova Ordem de Serviço</h2>
+                <h2 style="color: #FFFFFF;">Criar Ordem de Serviço</h2>
                 <button class="close-modal" onclick="fecharModal()">×</button>
             </div>
 
             <form id="formNovaOS">
                 <div class="form-group">
-                    <label for="clienteOS">Cliente *</label>
+                    <label for="clienteOS" style="color: #FFFFFF;">Cliente<span style="color: hsl(58, 100%, 50%)">*</span></label>
                     <select id="clienteOS" name="cliente" required>
                         <option value="">Selecione o cliente...</option>
                         <!-- Opções serão preenchidas via JavaScript -->
@@ -224,9 +222,9 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="tipoAparelho">Tipo de Aparelho *</label>
+                        <label for="tipoAparelho" style="color: #FFFFFF;">Tipo de Aparelho<span style="color: hsl(58, 100%, 50%)">*</span></label>
                         <select id="tipoAparelho" name="tipoAparelho" required>
-                            <option value="">Selecione...</option>
+                            <option value="">Selecione o tipo de aparelho...</option>
                             <option value="smartphone">Smartphone</option>
                             <option value="tablet">Tablet</option>
                             <option value="notebook">Notebook</option>
@@ -235,23 +233,23 @@
                         </select>
                     </div>
                 <div class="form-group">
-                        <label for="marcaModelo">Marca/Modelo *</label>
+                        <label for="marcaModelo" style="color: #FFFFFF;">Marca/Modelo<span style="color: hsl(58, 100%, 50%)">*</span></label>
                         <input type="text" id="marcaModelo" name="marcaModelo" placeholder="Ex: iPhone 12 Pro" required>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="problemaRelatado">Problema Relatado *</label>
+                    <label for="problemaRelatado" style="color: #FFFFFF;">Problema Relatado<span style="color: hsl(58, 100%, 50%)">*</span></label>
                     <textarea id="problemaRelatado" name="problemaRelatado" rows="4" placeholder="Descreva o problema reportado pelo cliente" required></textarea>
                 </div>
 
                 <div class="form-row">
                 <div class="form-group">
-                        <label for="prazoEstimado">Prazo Estimado (dias) *</label>
+                        <label for="prazoEstimado" style="color: #FFFFFF;">Prazo Estimado (dias)<span style="color: hsl(58, 100%, 50%)">*</span></label>
                         <input type="number" id="prazoEstimado" name="prazoEstimado" value="3" min="1" required>
                 </div>
                 <div class="form-group">
-                        <label for="prioridade">Prioridade</label>
+                        <label for="prioridade" style="color: #FFFFFF;">Prioridade<span style="color: hsl(58, 100%, 50%)">*</span></label>
                         <select id="prioridade" name="prioridade">
                             <option value="normal">Normal</option>
                             <option value="alta">Alta</option>
@@ -261,8 +259,8 @@
                 </div>
 
                 <div class="form-actions">
-                    <button type="button" class="btn btn-secondary" onclick="fecharModal()">Cancelar</button>
-                    <button type="submit" class="btn btn-primary">Criar OS</button>
+                    <button type="button" class="btn btn-secondary"="fecharModal()">Cancelar</button>
+                    <button type="submit" class="btn btn-primary" >Criar OS</button>
                 </div>
             </form>
         </div>
@@ -477,8 +475,8 @@
                     <tr>
                         <td colspan="7" style="text-align: center; padding: 40px; color: var(--gray-medium);">
                             <div style="font-size: 48px; margin-bottom: 20px;">📋</div>
-                            <div>Você ainda não tem uma ordem de serviço <br> Crie uma para começar.</div>
-                            
+                            <div>Nenhuma ordem de serviço encontrada</div>
+                            <div style="font-size: 14px; margin-top: 10px;">Crie sua primeira O.S!</div>
                         </td>
                     </tr>
                 `;

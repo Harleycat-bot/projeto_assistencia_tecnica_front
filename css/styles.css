@@ -5,9 +5,9 @@
         }
 
         :root {
-            --primary-blue: #0891b2;
+            --primary-blue: #1cbf72;
             --dark-blue: #0F3C4B; /*BARRA LATERAL*/
-            --light-blue: #3189e7;  /*BOTÃO DOS ICONES*/
+            --light-blue: #007BFF;  /*BOTÃO DOS ICONES*/
             --green: #10b981;
             --yellow: #fbbf24;
             --red: #ef4444;
@@ -225,12 +225,12 @@
             box-shadow: 0 2px 8px rgba(141, 14, 14, 0.08);
             cursor: pointer;
             transition: all 0.3s;
-            border: 2pxolid transparent;
+            border: 2px solid transparent;
         }
 
         .action-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgb(0, 0, 0);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             border-color: var(--primary-blue);
         }
 
@@ -453,8 +453,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.5);
-            z-index: 1000;
+            background: #345a7d;
             align-items: center;
             justify-content: center;
         }
@@ -464,7 +463,7 @@
         }
 
         .modal-content {
-            background: white;
+            background: #18415b;
             border-radius: 12px;
             padding: 30px;
             max-width: 600px;
