@@ -7,7 +7,7 @@
         :root {
             --primary-blue: #0891b2;
             --dark-blue: #0F3C4B; /*BARRA LATERAL*/
-            --light-blue: #007BFF;  /*BOTÃO DOS ICONES*/
+            --light-blue: #3189e7;  /*BOTÃO DOS ICONES*/
             --green: #10b981;
             --yellow: #fbbf24;
             --red: #ef4444;
@@ -225,12 +225,12 @@
             box-shadow: 0 2px 8px rgba(141, 14, 14, 0.08);
             cursor: pointer;
             transition: all 0.3s;
-            border: 2px solid transparent;
+            border: 2pxolid transparent;
         }
 
         .action-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 4px 12px rgb(0, 0, 0);
             border-color: var(--primary-blue);
         }
 
